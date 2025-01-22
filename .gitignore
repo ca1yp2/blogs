@@ -1,0 +1,7 @@
+js/jquery.min.js
+css/remixicon.css
+css/font_neonderthaw.css
+css/animate.min.css
+
+# fonts 폴더 하위 모든 폴더
+fonts/**
