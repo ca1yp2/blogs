@@ -23,11 +23,10 @@
                 <li><a href="#about">about me</a></li>
                 <li><a href="#video">video<i class="ri-arrow-down-s-line"></i></a>
                     <ul class="sub">
-                        <li><a href="https://youtu.be/rI1T1CnaY1I?si=rPoM4oovC1DM-ldb">2024.12.14</a></li>
-                        <li><a href="https://youtu.be/SsBvwzkpG6E?si=cWn7ULSRCVqyvxgS">2024.12.09</a></li>
-                        <li><a href="https://youtu.be/udOkwW3VIsI?si=VCcKVs5ehpl3d3pQ">2024.09.12</a></li>
-                        <li><a href="https://youtu.be/Ohh-5-YYEAI?si=UuNHnjNC37o_j6Ep">2024.06.20</a></li>
-                        <li><a href="https://youtu.be/sXMiA8qrIQ4?si=swClwuYeBXAjO18P">2024.05.10</a></li>
+                        <li><a href="">2024</a></li>
+                        <li><a href="">2023</a></li>
+                        <li><a href="">2022</a></li>
+                        <li><a href="">2021</a></li>
                     </ul>
                 </li>
                 <li><a href="#workme">work with me</a></li>
@@ -95,28 +94,33 @@
         <div class="vod d-flex">
                 <div class="youtube">
                     <div class="myvideo">
-                        <iframe width="100%" height="350px" src="https://www.youtube.com/embed/QUTKLl24fo4?si=EEHVtIf04Uu_ISFa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <a href="javascript:void(0)" onclick="openPopup('https://www.youtube.com/embed/QUTKLl24fo4?si=EEHVtIf04Uu_ISFa')">
-                            <img src="/images/3-3.jpg" alt="유튜브 영상 썸네일" width="300">
+                            <img src="/images/3-1.jpg" alt="유튜브 영상 썸네일" width="100%">
+                            <div class="myvideo-btn" data-vdo="001.mp4"></div>
                         </a>
                     </div>
-                    <!-- <div class="myvideo-btn" data-vdo="001.mp4"></div> -->
                     <p class="text-center">2023.06.15. 매드무비<br>
                         Legends Never Die</p>
                 </div>
                 <div class="youtube">
                     <div class="myvideo">
-                        <iframe width="100%" height="350px" src="https://www.youtube.com/embed/udOkwW3VIsI?si=QATFgSiLpjq2gzIb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <a href="javascript:void(0)" onclick="openPopup('https://www.youtube.com/embed/udOkwW3VIsI?si=QATFgSiLpjq2gzIb')">
+                            <img src="/images/3-2.jpg" alt="유튜브 영상 썸네일" width="100%">
+                            <div class="myvideo-btn" data-vdo="002.mp4"></div>
+                        </a>
                     </div>
-                    <!-- <div class="myvideo-btn" data-vdo="002.mp4"></div> -->
+                    
                     <p class="text-center">2024.09.12. 매드무비<br>
                         Superpower</p> 
                 </div>
                 <div class="youtube">
                     <div class="myvideo">
-                        <iframe width="100%" height="350px" src="https://www.youtube.com/embed/yu90lTNZ7-Q?si=duVQsWf-Whv6OtfO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <a href="javascript:void(0)" onclick="openPopup('https://www.youtube.com/embed/QUTKLl24fo4?si=EEHVtIf04Uu_ISFa')">
+                            <img src="/images/3-3.jpg" alt="유튜브 영상 썸네일" width="100%">
+                            <div class="myvideo-btn" data-vdo="003.mp4"></div>
+                        </a>
                     </div>
-                    <!-- <div class="myvideo-btn" data-vdo="003.mp4"></div> -->
+                    
                     <p class="text-center">2022.04.13. 매드무비
                         Can't Slow Me Down</p>
                 </div>
@@ -125,10 +129,9 @@
 
                 <!-- 팝업창 -->
                 <div id="popup">
-                    <button id="popup-close" onclick="closePopup()">닫기</button>
+                    <button id="popup-close" onclick="closePopup()"><i class="ri-close-line"></i></button>
                     <iframe id="popup-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-            <!-- </div> -->
             <!-- <div class="vdo-popup-back" id="vdo-back">
                 <div class="vdo-popup">
                     <video controls id="viewvideo">

@@ -113,6 +113,9 @@ ul.main{
     padding: 10px 0;
     border-bottom: 1px dashed #ddd;
 }
+.sub>li:last-child a{
+    border-bottom: none;
+}
 ul.main>li{
     position: relative;
     height: 35px;
@@ -294,14 +297,20 @@ h1.partner-title{
     top: 0;
     left: 0;
 }
-/*버튼 만들기
+.myvideo img{
+    height: 320px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* 버튼 만들기 */
  .myvideo-btn{
     width: 120px;
     height: 120px;
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.6);
     position: absolute;
-    z-index: 2;
+    z-index: 1000;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -326,7 +335,7 @@ h1.partner-title{
 }
 .myvideo-btn:hover::after{
     border-left-color: #fff;
-} */
+}
  .youtube p{
     position: relative;
     top: 380px;
@@ -418,11 +427,14 @@ h1.partner-title{
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #f00;
+    background-color: rgba(255, 255, 255, 0.4);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+}
+#popup-close:hover{
+    background-color: rgba(255, 255, 255, 0.8);
 }
 /* 배경 어두운 스타일 */
 #overlay {
@@ -668,4 +680,45 @@ a.viewall{
 footer>p{
     margin-top: 50px;
     text-align: center;
+}
+
+/************video page*************/
+#annual_video{
+    margin-top: 100px;
+}
+a.imgboxes{
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+    height: 400px;
+    overflow: hidden;
+}
+.imgboxes img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transition: all 0.3s;
+}
+.imgboxes:hover img{
+    width: 120%;
+}
+.text-box{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background: rgba(0, 96, 88, 0.5);
+    color: #fff;
+    left: 0;
+    top: 234px;
+    transition: all 300ms;
+}
+.imgboxes:hover .text-box{
+    top: 50px;
+}
+.text-box h1{
+    border-bottom: 1px solid #fff;
+}
+.text-box h1, .text-box p{
+    padding: 0 20px 10px;
 }

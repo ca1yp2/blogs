@@ -42,7 +42,6 @@ function openPopup(videoUrl) {
     document.getElementById('overlay').style.display = 'block';
     document.getElementById('popup-video').src = videoUrl;
 }
-
 // 팝업 닫기 함수
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
