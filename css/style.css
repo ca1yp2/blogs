@@ -28,6 +28,9 @@ a:hover{
 .container{
     width: 1340px;
 }
+.bg-f5{
+    background-color: f5f5f5;
+}
 header{
     padding: 35px 30px 0;
 }
@@ -165,6 +168,7 @@ ul.sub{
     line-height: 30px;
     font-size: 16px;
     margin-bottom: 20px;
+    font-family: "Noto Sans KR", sans-serif;
 }
 .signbox{
     padding-top: 50px;
@@ -177,84 +181,362 @@ ul.sub{
 /*************video section*************/
 .video{
     background: url('../images/background3.gif')repeat-x;
-                min-height: 1000px;
+    padding: 0 0 150px;
+    overflow: hidden;
 }
-.imgbox{
-    margin: 0 auto;
-    padding-bottom: 85px;
+.partner{
+    margin: 0 auto 50px;
+    width: 1000px;
 }
-.imgbox img{
-    width: 25%;
-    object-fit: cover;
-}
-.subscribe{
-    width: 100%;
-    color: #fff;
-    margin: 60px auto;
-}
-.subscribe i{
-    color: #fff;
-    font-size: 26px;
-    background: #ff0000;
-    padding: 10px;
-    padding-left: 15px;
-    border-radius: 5px;
-    letter-spacing: 4px;
-}
-.video h2{
-    font-size: 28px;
-    font-weight: 200;
-}
-.video .neonderthaw{
-    font-size: 36px;   
-}
-.videos{
-    margin-top: 50px;
-}
-.videoimg{
-    margin-left: auto;
-    margin-right: auto;
-}
-.column{
-    width: 33.33333%;
-    position: relative;
+.partner>a{
     display: block;
+    width: 25%;
+    height: 105px;
+    background: #fff;
+    position: relative;
 }
-
-.column img{
-    width: 100%;
+.partner img{
     position: absolute;
     top: 0;
     left: 0;
 }
-.playbutton{
-    position: absolute;
-    width: 460px;
+.partner>a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(0.7);
+    transition: all 300ms;
+}
+.partner>a:hover img{
+    filter: opacity(1);
+    width: 105%;
+    height: 105%;
+    top: -2.5%;
+    left: -2.5%;
+    z-index: 2;
+}
+p.partner-title{
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 12px;
     text-align: center;
-    z-index: 99;
-    font-size: 130px;
-    top: 160px;
-    left: calc(50% - 230px);
+    margin-block-start: 25px;
 }
-.column i{
+h1.partner-title{
+    font-size: 50px;
+    font-weight: 300;
+    margin-block-start: 10px;
+}
+.subscribe{
+    display: block;
+    width: 230px;
+    height: 50px;
+    background: #ff0000;
+    margin: 60px auto;
     color: #fff;
-    opacity: 0.4;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
 }
-.playbutton>a:hover i{
-    opacity: 0.8;
+.subscribe i{
+    font-size: 30px;
+    margin-right: 10px;
 }
-.text-boxes{
+.vod{
+    margin-left: -3px;
+    margin-right: -3px;
+    background-color: #d0e7ff;
+    min-height: 550px;
+}
+.vod-box{
+    position: relative;
+    width: 33.3333333%;
+    padding: 0 3px 50px;
+    height: 350px;
+}
+.myvideo{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    top: 0;
+    left: 0;
+}
+/*버튼 만들기
+ .myvideo-btn{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.6);
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 300ms;
+}
+.myvideo-btn::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 30px solid rgba(255, 255, 255, 0.6);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    transition: all 300ms;
+}
+.myvideo-btn:hover{
+    border-color: #fff;
+}
+.myvideo-btn:hover::after{
+    border-left-color: #fff;
+} */
+ .vod-box p{
+    position: relative;
+    top: 380px;
+    font-weight: 600;
+    font-size: 20px;
+    width: 300px;
+    left: calc(50% - 150px);
+ }
+
+ /***********best ageent section**********/
+.best{
+    margin-top: 90px;
+}
+.best h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+a.viewall{
+    font-size: 20px;
+    color: #6f5fc9;
+    text-decoration: underline;
+    font-weight: 200;
+}
+.best .container{
+    margin-top: 80px;
+}
+.best .col{
+    width: 50%;
+    height: 427px;
+    position: relative;
+}
+.best .col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.best-link{
+    color: #000;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 45px;
+    background: rgba(255,255,255,.8);
+    position: absolute;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    width: 200px;
+    height: 45px;
+    bottom: 50px;
+    left: calc(50% - 100px);
+    transition: all 300ms;
+}
+.best-link:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+/*****************section mailing*****************/
+.mailing-form-box{
+    background-color: #d0e7ff;
+    padding-top: 55px;
+}
+.mailing-form-box p{
+    width: 270px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    /* width: 100%;
-    position: relative; */
+}
+.mailing-form-box form{
+    margin: 45px auto 0;
+    width: 430px;
+    padding-bottom: 50px;
+}
+.mailing-form-box input{
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid #d9d9d9;
+}
+.mailing-form-box input::placeholder{
+    color: #d9d9d9;
+}
+/**********workme section************/
+.workme{
+    padding-top: 100px;
+}
+/*반응형 정사각형 만드는 법*/
+.square{
+    width: 100%; /*가로 너비 100%*/
+    padding-top: 100%; /*세로 크기는 가로 크기의 100%*/
+    position: relative;
+}
+.square-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.square-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.me-sign{
+    position: absolute;
+    top: -115px;
+    right: -150px;
+    width: 300px;
+}
+.bg-map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/backgroundimage2.png) no-repeat center;
+    background-size: 70%;
+}
+.bg-map h3, .bg-map p{
+    width: 230px;
+    text-align: center;
+    border-bottom: 1px solid #6f5fc9;
+    margin: 0;
+}
+.bg-map h3{
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.bg-map h3:first-child{
+    padding-top: 30px;
+}
+.bg-map p{
+    font-weight: 300;
+    font-family: "Noto Sans KR", sans-serif;;
+}
+.bg-map h3.current{
+    margin-top: 60px;
+}
+.bg-map>p:first-of-type{
+    border: none;
+}
+.next{
+    margin-top: 75px;
+}
+.next p{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.hr{
+    margin-top: 120px;
+    margin-bottom: 70px;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+}
+/************instagram*************/
+.instagram p{
     text-align: center;
 }
-.text-box{
-    width: 33.3333333%;
-    position: relative;
-    top: 500px;
+.instagram p:first-child{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 80px;
 }
-/* .text-box p{
+.instagram p:last-child{
+    margin-bottom: 60px;
+}
+.instagram a{
+    font-size: 20px;
+    font-weight: 300;
+    color: #6f5fc9;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+/*************footer*************/
+.footer{
+    background: url('../images/background3.gif') repeat-x;
+    margin-top: 30px;
+    padding: 0 0 120px;
+    overflow: hidden;
+}
+.imgbox{
+    margin: 0 auto 80px;
+    position: relative;;
+}
+.imgbox>a{
+    display: block;
+    width: 20%;
+    height: 330px;
+    position: relative;
+    background-color: #fff;
+}
+.imgbox img{
     position: absolute;
-} */
+    top: 0;
+    left: 0;
+}
+.imgbox>a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(0.7);
+    transition: all 300ms;
+}
+.imgbox>a:hover img{
+    filter: opacity(1);
+    width: 105%;
+    height: 105%;
+    top: -2.5%;
+    left: -2.5%;
+    z-index: 2;
+}
+.footer-menu{
+    margin-bottom: 50px;
+}
+.footer-menu p{
+    text-align: center;
+}
+.footer-menu a{
+    margin-right: 30px;
+    color: #757575;
+    font-size: 18px;
+}
+.footer-menu a:last-child{
+    margin-right: 0;
+}
+.footer-menu a:hover{
+    color: #000;
+}
+.footer-snsbox{
+    margin-bottom: 50px
+}
+.footer-snsbox p{
+    text-align: center;
+}
+.footer-snsbox a{
+    margin-right: 8px;
+    font-size: 28px;
+}
+.footer-snsbox a:last-child{
+    margin-right: 0;
+}
+footer>p{
+    margin-top: 50px;
+    text-align: center;
+}
