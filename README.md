@@ -52,6 +52,8 @@ blogs/
 └── video_2025.html
 ```
 
+---
+
 ## TODO (향후 계획)
 - 반응형 개선 ( 모바일 최적화 )
 - 블로그 글 기능 추가
@@ -61,12 +63,15 @@ blogs/
 - 이메일 구독 기능 및 뉴스레터 연동 ( 페이지 내 입력 폼 활용 + Back-end 연동 )
 - SNS 연결
 
+---
+
 ## 📄 라이선스
 
 MIT 라이선스 (MIT License)
 
 저작권 (c) 2025 ca1yp2
 
+본 프로젝트는 학습 및 개인 포트폴리오 용도로 제작되었습니다. 
 본 소프트웨어 및 관련 문서 파일(이하 "소프트웨어")을 무상으로 획득한 모든 사람에게
 소프트웨어를 제한 없이 사용, 복사, 수정, 병합, 출판, 배포, 서브라이선스 및 판매할 권리를
 허가합니다.
@@ -83,6 +88,7 @@ MIT License
 
 Copyright (c) 2025 ca1yp2
 
+This project was created for learning and personal portfolio purposes.
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
