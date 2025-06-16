@@ -31,25 +31,18 @@
 
 ```
 blogs/
-├── css/
-│    ├── animate.min.css
-│    ├── font_neonderthaw.css
-│    ├── grid.css
-│    ├── remixicon.css
-│    └── style.css
-├── fonts/
-├── images/
-├── js/
-│    ├── jquery.min.js
-│    └── script.js
-├── .gitignore
-├── index.html
-├── README.md
-├── video_2021.html
-├── video_2022.html
-├── video_2023.html
-├── video_2024.html
-└── video_2025.html
+├── css/               # 스타일 시트 (애니메이션, 폰트, 그리드, 아이콘, 메인 스타일 등)
+├── fonts/             # 웹폰트 파일
+├── images/            # 이미지 리소스
+├── js/                # 자바스크립트 파일 (jQuery, 커스텀 스크립트)
+├── index.html         # 메인 HTML 파일
+├── video_2021.html    # 연도별 비디오 페이지 (2021년)
+├── video_2022.html    # 연도별 비디오 페이지 (2022년)
+├── video_2023.html    # 연도별 비디오 페이지 (2023년)
+├── video_2024.html    # 연도별 비디오 페이지 (2024년)
+├── video_2025.html    # 연도별 비디오 페이지 (2025년)
+├── README.md          # 프로젝트 설명서
+└── .gitignore         # Git 무시 파일 목록
 ```
 
 ---
